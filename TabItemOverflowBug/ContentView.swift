@@ -1,17 +1,10 @@
-//
-//  ContentView.swift
-//  TabItemOverflowBug
-//
-//  Created by Ralf Ebert on 13.04.21.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     let title: String
     @ObservedObject var appModel = AppModel()
     @State var showSheet = false
-    
+
     var body: some View {
         NavigationView {
             Form {
